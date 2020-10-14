@@ -1,0 +1,15 @@
+h1 {
+    color: #black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header {
+    background-color: #edc988;
+    margin: 0;
+}
+
+.footer {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
