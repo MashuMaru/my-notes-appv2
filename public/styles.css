@@ -3,10 +3,16 @@
     padding: 0;
   }
 
+body {
+    background: #f5f5f5;
+}
+
 h1 {
     color: black;
     font-family: 'Noto Sans JP', sans-serif;
-    width: 150px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .header {
@@ -34,6 +40,8 @@ h1 {
     background-color: #f8efd4;
     border-radius: 20%;
     display: flexbox;
+    /* position: absolute;
+    z-index: 9; */
 }
 
 .note-title {
@@ -47,10 +55,31 @@ input {
     border: 0;
     background-color: transparent;
     padding-top: 30px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #a6a6a4;
     font-family: 'Noto Sans JP', sans-serif;
     display: block;
     margin : 0 auto;
     outline: none;
     width: 75%;
 }
+
+textarea {
+    resize: none;
+    width: 75%;
+    height: 150px;
+    display: block;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background: #f8efd4;
+    font-family: 'Noto Sans JP', sans-serif;
+    outline: none;
+
+ }
+
+ /* .note-move {
+    cursor: move;
+    z-index: 10;
+ } */

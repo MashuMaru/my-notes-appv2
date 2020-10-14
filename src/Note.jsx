@@ -10,8 +10,9 @@ function clickedContents () {
 
 function Note() {
     return <div className="note">
+    {/* <div className="note-move">1</div> */}
     <input className="note-title" placeholder="title..." onClick={clickedTitle}></input>
-    <input cols="30" rows="5" className="note-contents" placeholder="contents..." onClick={clickedContents}></input>
+    <textarea cols="30" rows="5" className="note-contents" placeholder="contents..." onClick={clickedContents}></textarea>
     </div>
 }
 
