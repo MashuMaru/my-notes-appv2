@@ -1,20 +1,24 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
 
   .delete-img {
-      width: 10%;
+      width: 20px;
+      margin-left: 273px;
+      margin-top: -5px;
+      /* position: relative; */
   }
 
   .add-img {
-    width: 5%;
+    width: 45px;
     margin-right: 25px;
 }
 
 body {
-    background: #f5f5f5;
+    background: #f6f6f6;
     min-height: 100%;
     overflow: auto;
 }
@@ -52,14 +56,18 @@ h1 {
     /* left:0; */
 }
 
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .note {
     margin-top: 50px;
     margin-left: 50px;
     width: 300px;
     height: 250px;
     background-color: #f8efd4;
-    border-radius: 20%;
-    display: flexbox;
+    border-radius: 20% 20% 0 20%;
     
     /* position: absolute;
     z-index: 9; */
