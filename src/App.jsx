@@ -14,9 +14,7 @@ function App() {
 <div className="grid-container">
 <Note />
 <Note />
-<Note />
-<Note />
-<Note />
+
 </div>
 <Footer />
     </div>
