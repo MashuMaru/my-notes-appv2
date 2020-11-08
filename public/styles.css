@@ -10,6 +10,7 @@
 
   .body-section{
     height: 100%;
+    margin-bottom: 100px;
   }
 
   .delete-img {
@@ -76,7 +77,7 @@ h1 {
 .note {
     margin-top: 50px;
     margin-left: 50px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     width: 300px;
     height: 250px;
     background-color: #f8efd4;
@@ -84,6 +85,14 @@ h1 {
     
     /* position: absolute;
     z-index: 9; */
+}
+
+@media screen and (max-width: 440px) {
+.note {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
 
 .note-title {
