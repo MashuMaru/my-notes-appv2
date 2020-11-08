@@ -7,9 +7,8 @@ function App() {
     return <div>
             <Header />
             <Note />
-            <Note />
             <Footer />
-    </div>
+        </div>
 }
 
 export default App;

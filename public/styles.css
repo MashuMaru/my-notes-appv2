@@ -13,7 +13,10 @@
 
   .add-img {
     width: 45px;
-    margin-right: 25px;
+    height: 45px;
+    /* width: 10%; */
+    /* margin-right: 25px; */
+    margin-left: 25px;
 }
 
 body {
@@ -27,7 +30,7 @@ body {
 h1 {
     color: black;
     font-family: 'Noto Sans JP', sans-serif;
-    width: 100%;
+    /* width: 100%; */
     font-size: 25px;
     font-weight: 400;
 }
