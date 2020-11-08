@@ -4,6 +4,14 @@
     box-sizing: border-box;
   }
 
+  body {
+      height: 100%;
+  }
+
+  .body-section{
+    height: 100%;
+  }
+
   .delete-img {
       width: 20px;
       margin-left: 265px;
@@ -68,6 +76,7 @@ h1 {
 .note {
     margin-top: 50px;
     margin-left: 50px;
+    margin-bottom: 100px;
     width: 300px;
     height: 250px;
     background-color: #f8efd4;

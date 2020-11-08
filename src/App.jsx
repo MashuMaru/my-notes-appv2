@@ -6,7 +6,10 @@ import Note from "./Note.jsx";
 function App() {
     return <div>
             <Header />
-            <Note />
+            <section className="body-section">
+                <Note />
+                <Note />
+            </section>
             <Footer />
         </div>
 }
