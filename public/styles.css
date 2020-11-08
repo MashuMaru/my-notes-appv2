@@ -21,6 +21,12 @@
       /* position: relative; */
   }
 
+  .delete-img:hover {
+      width: 25px;
+      margin-left: 265px;
+      margin-top: -10px;
+  }
+
   .add-img {
     width: 45px;
     height: 45px;

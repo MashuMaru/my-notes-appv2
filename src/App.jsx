@@ -8,11 +8,7 @@ function App() {
             <Header />
             <section className="body-section">
                 <Note />
-                <Note />
-                <Note />
-                <Note />
-                <Note />
-                <Note />
+
             </section>
             <Footer />
         </div>
