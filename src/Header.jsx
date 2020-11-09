@@ -19,10 +19,10 @@ function Header() {
 
     return <div className="header">
                 <h1 className="header-text">My Sticky Notes App</h1>
-                    <div className="add-button" onMouseOver={handleMouseOver}>
-                        <img className="add-img" src={require('./images/plus.png')} alt="add" onClick={addNote} onMouseOut={handleMouseOut}></img>
-                    {isMouseOver ? <p className="add-p">add note</p> : null}
-                    {isMouseOut && null }
+                    <div className="add-button">
+                        <img className="add-img" src={require('./images/plus.png')} alt="add" onClick={addNote} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}></img>
+                        {isMouseOver ? <p className="add-p">add note</p> : null}
+                        {isMouseOut && null }
                     </div>
             </div>
     }
