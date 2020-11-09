@@ -57,10 +57,14 @@ h1 {
 }
 
 .add-p {
+    opacity: 0.7;
     float: right;
     padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: auto;
-    margin-top: 12px;
+    margin-top: 10px;
+    background-color: lightgray;
+    border-radius: 50% 15% 15% 50%;
 }
 
 .header {
