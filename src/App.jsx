@@ -6,28 +6,43 @@ import Note from "./Note.jsx";
 function App() {
     const [notes, setNotes] = useState([]);
 
-    function deleteNote(id) {
-        setNotes(prevNotes => {
-            return prevNotes.filter((noteItem, index) => {
-                return index !== id;
-            })
-        })
+    function addNewNote() {
+        alert('add new note.');
     }
 
+    // function addNewNote(note) {
+    //     setNotes(prevNotes => {
+    //         return [...prevNotes, note];
+    //     })
+    // }
+
+    function deleteNote() {
+        alert('delete note.');
+    }
+
+    // function deleteNote(id) {
+    //     setNotes(prevNotes => {
+    //         return prevNotes.filter((noteItem, index) => {
+    //             return index !== id;
+    //         })
+    //     })
+    // }
+
     return <div>
-            <Header />
+            <Header 
+            onAdd={addNewNote}/>
             <section className="body-section">
-            <Note />
+            <Note 
+                onDelete={deleteNote}
+                />
             {notes.map((noteItem, index) => {
                 return (<Note 
                 key={index}
                 id={index}
+                value={noteItem.noteItem}
                 onDelete={deleteNote}
                 />);
             })}
-                
-
-
             </section>
             <Footer />
         </div>

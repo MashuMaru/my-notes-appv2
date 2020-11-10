@@ -1,13 +1,12 @@
 import React, {useState} from "react";
 
-
-function addNote(){
-    alert("add a new note.")
-}
-
-function Header() {
+function Header(props) {
     const [isMouseOver, setMouseOver] = useState(false);
     const [isMouseOut, setMouseOut] = useState(true);
+
+    function addNote() {
+        props.onAdd();
+    }
 
     function handleMouseOver() {
         setMouseOver(true);
@@ -21,7 +20,7 @@ function Header() {
                 <h1 className="header-text">My Sticky Notes App</h1>
                     <div className="add-button">
                         <img className="add-img" src={require('./images/plus.png')} alt="add" onClick={addNote} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}></img>
-                        {isMouseOver ? <p className="add-p">add note</p> : null}
+                        {isMouseOver ? <p className="add-p">add note...</p> : null}
                         {isMouseOut && null }
                     </div>
             </div>
