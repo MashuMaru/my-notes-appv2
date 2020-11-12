@@ -6,8 +6,9 @@ import Note from "./Note.jsx";
 function App() {
     const [notes, setNotes] = useState([]);
 
-    function addNewNote() {
-        alert('add new note.');
+    function addNewNote() { 
+        alert('add note....');
+    
     }
 
     // function addNewNote(note) {
@@ -31,7 +32,7 @@ function App() {
     return <div>
             <Header 
             onAdd={addNewNote}/>
-            <section className="body-section">
+            <section id="note-section" className="body-section">
             <Note 
                 onDelete={deleteNote}
                 />
