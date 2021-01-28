@@ -4,18 +4,20 @@ import Footer from "./Footer.jsx";
 import Note from "./Note.jsx";
 
 function App() {
-    const [notes, setNotes] = useState([]);
+    const [notes, setNotes] = useState([0]);
 
     // function addNewNote() { 
     //     alert('add note....');
     
     // }
 
-    function addNewNote(note) {
+    function addNewNote(noteItem) {
         setNotes(prevNotes => {
-            return [...prevNotes, note];
+            return [...prevNotes, noteItem];
         })
     }
+
+
 
     function deleteNote() {
         alert('delete note.');
@@ -37,11 +39,11 @@ function App() {
                 onDelete={deleteNote}
                 /> */}
 
-            {notes.map((noteItem, index) => {
+            {notes.map((notes, index) => {
                 return (<Note 
                 key={index}
                 id={index}
-                value={noteItem.noteItem}
+                value={notes.noteItem}
                 onDelete={deleteNote}
                 />);
             })}

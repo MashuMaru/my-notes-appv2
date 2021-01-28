@@ -11,28 +11,41 @@
   .body-section{
     height: 100%;
     margin-bottom: 100px;
-    /* display: inline-block; */
   }
 
   .delete-img {
       width: 20px;
       margin-left: 265px;
       margin-top: -5px;
-      /* position: relative; */
+      transition: transform .5s, visibility .5s ease-in;
   }
 
   .delete-img:hover {
-      width: 25px;
-      margin-left: 265px;
-      margin-top: -10px;
+      /* margin-left: 265px;
+      margin-top: -10px; */
+      transition: all 0.5s ease 0s;
+      transition: transform .5s, visibility .5s ease-in;
+      -ms-transform: scale(1.2);  
+      -webkit-transform: scale(1.2); 
+  }
+
+  img {
+      cursor: pointer;
   }
 
   .add-img {
     width: 45px;
     height: 45px;
-    /* width: 10%; */
-    /* margin-right: 25px; */
     margin-left: 25px;
+    transition: all 0.5s ease 0s;
+    transition: transform .5s, visibility .5s ease-in;
+}
+
+.add-img:hover {
+    transition: all 0.5s ease 0s;
+    transition: transform .5s, visibility .5s ease-in;
+    -ms-transform: scale(1.2);  
+    -webkit-transform: scale(1.2); 
 }
 
 body {
@@ -46,15 +59,9 @@ body {
 h1 {
     color: black;
     font-family: 'Noto Sans JP', sans-serif;
-    /* width: 100%; */
     font-size: 25px;
     font-weight: 400;
 }
-
-/* .add-button {
-    color: black;
-    font-family: 'Noto Sans JP', sans-serif;
-} */
 
 .add-p {
     color: black;
@@ -66,7 +73,6 @@ h1 {
     padding-right: 10px;
     margin-bottom: auto;
     margin-top: 10px;
-    /* background-color: lightgray; */
     border-radius: 50% 15% 15% 50%;
 }
 
@@ -82,18 +88,6 @@ h1 {
 .footer {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
-    /* position: absolute;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #edc988;
-    position:fixed;
-    bottom: 0; */
-
-
-
     position: fixed;
     overflow: hidden;
     text-align: center;
@@ -111,15 +105,11 @@ h1 {
 .note {
     margin-top: 50px;
     margin-left: 50px;
-    /* margin-bottom: 100px; */
     width: 300px;
     height: 250px;
     background-color: #f8efd4;
     border-radius: 20% 20% 0 20%;
     display: inline-block;
-    
-    /* position: absolute;
-    z-index: 9; */
 }
 
 @media screen and (max-width: 440px) {
@@ -156,19 +146,12 @@ textarea {
     height: 150px;
     display: block;
     padding-top: 10px;
-    /* padding-left: 10px; */
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     border: none;
-    /* background: transparent; */
     background: #f8efd4;
     font-family: 'Noto Sans JP', sans-serif;
     outline: none;
 
  }
-
- /* .note-move {
-    cursor: move;
-    z-index: 10;
- } */
