@@ -6,16 +6,16 @@ import Note from "./Note.jsx";
 function App() {
     const [notes, setNotes] = useState([]);
 
-    function addNewNote() { 
-        alert('add note....');
+    // function addNewNote() { 
+    //     alert('add note....');
     
-    }
-
-    // function addNewNote(note) {
-    //     setNotes(prevNotes => {
-    //         return [...prevNotes, note];
-    //     })
     // }
+
+    function addNewNote(note) {
+        setNotes(prevNotes => {
+            return [...prevNotes, note];
+        })
+    }
 
     function deleteNote() {
         alert('delete note.');
@@ -33,9 +33,10 @@ function App() {
             <Header 
             onAdd={addNewNote}/>
             <section id="note-section" className="body-section">
-            <Note 
+            {/* <Note 
                 onDelete={deleteNote}
-                />
+                /> */}
+
             {notes.map((noteItem, index) => {
                 return (<Note 
                 key={index}

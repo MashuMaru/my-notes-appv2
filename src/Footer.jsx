@@ -1,8 +1,11 @@
 import React from "react";
 
 function Footer(){
+    var date = new Date();
+    var currentYear = date.getFullYear();
+
     return <div className="footer"> 
-    <p>© Copyright 2020. My Sticky Notes App.</p>
+    <p>© Copyright {currentYear}. Mashumaru</p>
     </div>
 }
 
