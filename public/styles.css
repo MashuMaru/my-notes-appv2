@@ -36,7 +36,10 @@
   .add-img {
     width: 45px;
     height: 45px;
-    margin-left: 25px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* margin-left: 25px; */
     transition: all 0.5s ease 0s;
     transition: transform .5s, visibility .5s ease-in;
 }
@@ -58,13 +61,15 @@ body {
 
 h1 {
     color: black;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Archivo Black', sans-serif;
+    /* font-size: 25px; */
+    /* font-weight: 400; */
 }
 
 .add-p {
     color: black;
+    position: relative;
     font-family: 'Noto Sans JP', sans-serif;
     font-style: italic;
     opacity: 0.6;
@@ -78,11 +83,16 @@ h1 {
 
 .header {
     background-color: #edc988;
+    height: 75px;
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+}
+
+.header-text {
+    width: 400px;
 }
 
 .footer {

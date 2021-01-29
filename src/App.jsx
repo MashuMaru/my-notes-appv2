@@ -4,12 +4,15 @@ import Footer from "./Footer.jsx";
 import Note from "./Note.jsx";
 
 function App() {
-    const [notes, setNotes] = useState([0]);
+    const [notes, setNotes] = useState([0, 1, 2, ]);
+    const children = [];
 
-    // function addNewNote() { 
-    //     alert('add note....');
-    
+    // function addNewNote() {
+    //     for (var i = 0; i < this.setNotes.numChildren; i += 1) {
+    //         children.push(<Note />)
+    //     } 
     // }
+    
 
     function addNewNote(noteItem) {
         setNotes(prevNotes => {
@@ -17,19 +20,9 @@ function App() {
         })
     }
 
-
-
     function deleteNote() {
         alert('delete note.');
     }
-
-    // function deleteNote(id) {
-    //     setNotes(prevNotes => {
-    //         return prevNotes.filter((noteItem, index) => {
-    //             return index !== id;
-    //         })
-    //     })
-    // }
 
     return <div>
             <Header 
@@ -38,6 +31,8 @@ function App() {
             {/* <Note 
                 onDelete={deleteNote}
                 /> */}
+            
+            {children}
 
             {notes.map((notes, index) => {
                 return (<Note 
