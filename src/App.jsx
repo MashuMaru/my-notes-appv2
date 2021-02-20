@@ -13,12 +13,18 @@ class App extends Component {
     render () {
 
     return (
-    <div>
+            <div>
                 <Header />
-                <section id="note-section" className="body-section">
+                {/* <section id="note-section" className="body-section"> */}
                 <Note />
-
-                </section>
+                <Note />
+                <Note />
+                <Note />
+                <Note />
+                <Note />
+                <Note />
+                <Note />
+                {/* </section> */}
                 <Footer />
             </div>)
             }

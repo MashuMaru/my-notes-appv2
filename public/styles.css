@@ -119,7 +119,7 @@ h1 {
     height: 250px;
     background-color: #f8efd4;
     border-radius: 20% 20% 0 20%;
-    display: inline-block;
+    display: inline-table;
 }
 
 @media screen and (max-width: 440px) {
