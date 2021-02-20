@@ -5,7 +5,7 @@ function Footer(){
     var currentYear = date.getFullYear();
 
     return <div className="footer"> 
-    <p>© Copyright {currentYear}. Mashumaru</p>
+    <p>© Copyright {currentYear}. Developed by Mashumaru.</p>
     </div>
 }
 

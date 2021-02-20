@@ -15,7 +15,7 @@ class App extends Component {
 
     prevNoteID = 1;
 
-    handleAddNote = (id) => {
+    handleAddNote = () => {
         this.setState(prevState => {
             return {
                 notes: [
@@ -39,7 +39,7 @@ class App extends Component {
     render () {
 
     return (
-            <div>
+            <div id="body-section">
                 <Header 
                     addNote={this.handleAddNote}
                 />
