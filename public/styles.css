@@ -20,6 +20,8 @@ body {
 }
 
 .delete-img {
+    position: absolute;
+    bottom: 10px;
     width: 20px;
     margin-left: 265px;
     margin-top: -5px;
@@ -69,7 +71,7 @@ h1 {
 }
 
 .add-p {
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     position: relative;
     font-family: 'Noto Sans JP', sans-serif;
@@ -84,7 +86,7 @@ h1 {
 }
 
 .delete-p {
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     position: absolute;
     font-family: 'Noto Sans JP', sans-serif;
@@ -92,7 +94,7 @@ h1 {
     opacity: 0.6;
     float: left;
     bottom: 10px;
-    left: 170px;
+    left: 185px;
 
 }
 

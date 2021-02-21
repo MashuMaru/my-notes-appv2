@@ -34,13 +34,11 @@ class Note extends Component {
                 <textarea cols="30" rows="5" className="note-contents" placeholder="contents..."></textarea> 
                 : null}
 
-                {this.state.isExpanded ? 
                 <img onClick={() => this.props.removeNote(this.props.id)} className="delete-img" src={require('./images/recycle-bin.png')} alt="delete" onMouseOver={this.handleMousedOver} onMouseOut={this.handleMousedOut}></img> 
-                : null}
-
-                {this.state.isMousedOver ?
+                {this.state.isMousedOver ? 
                 <p className="delete-p">delete note...</p>
                 : null }
+                
             </div>)
         }
     }
