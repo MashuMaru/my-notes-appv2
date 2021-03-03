@@ -8,7 +8,7 @@ body {
     height: 100%
 }
 
-.body-section{
+.body-section {
     height: 100%;
     margin-bottom: 100px;
 }
@@ -16,7 +16,7 @@ body {
 #body-section {
     position: relative;
     min-height: 100vh;
-    padding-bottom: 2.5rem; 
+    padding-bottom: 2.5rem;
 }
 
 .delete-img {
@@ -31,8 +31,8 @@ body {
 .delete-img:hover {
     transition: all 0.5s ease 0s;
     transition: transform .5s, visibility .5s ease-in;
-    -ms-transform: scale(1.2);  
-    -webkit-transform: scale(1.2); 
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
 
 img {
@@ -52,8 +52,8 @@ img {
 .add-img:hover {
     transition: all 0.5s ease 0s;
     transition: transform .5s, visibility .5s ease-in;
-    -ms-transform: scale(1.2);  
-    -webkit-transform: scale(1.2); 
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
 
 body {
@@ -141,11 +141,11 @@ h1 {
 }
 
 @media screen and (max-width: 440px) {
-.note {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+    .note {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
 }
 
@@ -163,7 +163,7 @@ input {
     border-bottom: 1px solid #a6a6a4;
     font-family: 'Noto Sans JP', sans-serif;
     display: block;
-    margin : 0 auto;
+    margin: 0 auto;
     outline: none;
     width: 75%;
 }
@@ -181,4 +181,4 @@ textarea {
     background: #f8efd4;
     font-family: 'Noto Sans JP', sans-serif;
     outline: none;
- }
+}

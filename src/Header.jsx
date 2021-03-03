@@ -1,41 +1,45 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 class Header extends Component {
-    
-    state = {
-        isMousedOver: false,
-    }
-    
-    handleMouseOver = () => {
-        this.setState({
-            isMousedOver: true
-        })
-    }
+  state = {
+    isMousedOver: false,
+  };
 
-    handleMouseOut = () => {
-        this.setState( {
-            isMousedOver: false
-        })
-    }
+  handleMouseOver = () => {
+    this.setState({
+      isMousedOver: true,
+    });
+  };
 
-    render() {
-        return <div className="header">
-                <h1 className="header-text">My Sticky Notes App</h1>
-                    <div className="add-button">
-                    <img className="add-img" src={require('./images/plus.png')} alt="add" onClick={() => this.props.addNote()} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}></img>
+  handleMouseOut = () => {
+    this.setState({
+      isMousedOver: false,
+    });
+  };
 
-                    {this.state.isMousedOver ? 
-                    <p className="add-p">add note...</p> 
-                    : null}
-                    
-                    {this.state.isMousedOut && null }
-            </div>
-                </div>
-    }
+  render() {
+    return (
+      <div className="header">
+        <h1 className="header-text">My Sticky Notes App</h1>
+        <div className="add-button">
+          <img
+            className="add-img"
+            src={require("./images/plus.png")}
+            alt="add"
+            onClick={() => this.props.addNote()}
+            onMouseOver={this.handleMouseOver}
+            onMouseOut={this.handleMouseOut}
+          ></img>
 
-    }
-   
+          {this.state.isMousedOver ? (
+            <p className="add-p">add note...</p>
+          ) : null}
 
-
+          {this.state.isMousedOut && null}
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Header;

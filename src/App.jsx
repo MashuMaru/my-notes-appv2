@@ -4,57 +4,54 @@ import Footer from "./Footer.jsx";
 import Note from "./Note.jsx";
 
 class App extends Component {
+  state = {
+    notes: [
+      {
+        id: 0,
+      },
+    ],
+  };
 
-    state = {
+  prevNoteID = 1;
+
+  handleAddNote = () => {
+    this.setState((prevState) => {
+      return {
         notes: [
-           { 
-               id: 0
-            }
-        ]
-    }
+          ...prevState.notes,
+          {
+            id: (this.prevNoteID += 1),
+          },
+        ],
+      };
+    });
+  };
 
-    prevNoteID = 1;
+  handleRemoveNote = (id) => {
+    this.setState((prevState) => {
+      return {
+        notes: prevState.notes.filter((n) => n.id !== id),
+      };
+    });
+  };
 
-    handleAddNote = () => {
-        this.setState(prevState => {
-            return {
-                notes: [
-                    ...prevState.notes,
-                    {
-                        id: this.prevNoteID += 1
-                    }
-                ]
-            }
-        })
-    }
-
-    handleRemoveNote = (id) => {
-        this.setState (prevState => {
-            return {
-                notes: prevState.notes.filter(n => n.id !== id)
-            }
-        });
-    }
-
-    render () {
-
+  render() {
     return (
-            <div id="body-section">
-                <Header 
-                    addNote={this.handleAddNote}
-                />
-                <section id="note-section" className="body-section">
-                {this.state.notes.map( (note, index) => 
-                <Note 
-                    id={note.id}
-                    key={note.id.toString()}
-                    index={index}
-                    removeNote={this.handleRemoveNote} 
-                />)} 
-
-                </section> 
-                <Footer />
-            </div>)
-            }
-        }
+      <div id="body-section">
+        <Header addNote={this.handleAddNote} />
+        <section id="note-section" className="body-section">
+          {this.state.notes.map((note, index) => (
+            <Note
+              id={note.id}
+              key={note.id.toString()}
+              index={index}
+              removeNote={this.handleRemoveNote}
+            />
+          ))}
+        </section>
+        <Footer />
+      </div>
+    );
+  }
+}
 export default App;
