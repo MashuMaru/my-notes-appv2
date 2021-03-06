@@ -35,6 +35,22 @@ body {
     -webkit-transform: scale(1.2);
 }
 
+.save-img {
+    position: absolute;
+    bottom: 10px;
+    width: 20px;
+    margin-left: 30px;
+    margin-top: -5px;
+    transition: transform .5s, visibility .5s ease-in;
+}
+
+.save-img:hover {
+    transition: all 0.5s ease 0s;
+    transition: transform .5s, visibility .5s ease-in;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
 img {
     cursor: pointer;
 }
@@ -95,6 +111,19 @@ h1 {
     float: left;
     bottom: 10px;
     left: 185px;
+
+}
+
+.save-p {
+    font-size: 12px;
+    color: black;
+    position: absolute;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: italic;
+    opacity: 0.6;
+    float: left;
+    bottom: 10px;
+    left: 55px;
 
 }
 
